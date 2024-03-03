@@ -10,7 +10,7 @@ const ProfileForm = () => {
   const submitHandler=(e)=>{
       e.preventDefault();
       const newPassword= passwordRef.current.value;
-      fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBtdGRS_hZoIFX-OOXAcBBeWkkm2bfBavc",
+      fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=",
       {
         method:"POST",
         body: JSON.stringify({

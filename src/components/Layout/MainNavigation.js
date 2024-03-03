@@ -9,6 +9,7 @@ const MainNavigation = () => {
   const isLoggedIn=authCtx.isLoggedIn;
   const logoutHandler=(e)=>{
     e.preventDefault();
+    localStorage.removeItem(authCtx.token);
     authCtx.logout();
     history.replace('/auth');
   }

@@ -22,11 +22,11 @@ const AuthForm = () => {
       setIsLoading(true);
       let url;
       if(isLogin){
-          url="https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBtdGRS_hZoIFX-OOXAcBBeWkkm2bfBavc"
+          url="https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key="
 
       }
       else{
-        url='https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBtdGRS_hZoIFX-OOXAcBBeWkkm2bfBavc'      
+        url='https://identitytoolkit.googleapis.com/v1/accounts:signUp?key='      
       }
       fetch(url,
         {
